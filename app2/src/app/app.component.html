@@ -1,0 +1,19 @@
+
+<div class="a">
+<div> {{'this is a angular session' | reverseString  }}</div>
+<div> {{'this is a angular session' | uppercase  }}</div>
+</div>
+
+<!-- <div> {{date | date:'short' }} </div> -->
+<!-- <div> {{amount | currency :'USD' }} </div> -->
+<div class="a">
+ <div [ngStyle]="{'color':isHighlighted ? 'blue':'black'}">styling using dynamic</div>
+ <button (click)="toggleHighlight()">toggle color</button>
+</div>
+
+<div class="a">
+<button (click)="sortUsers()">sort the users</button>
+<ul>
+  <li *ngFor="let user of users">{{user}}</li>
+</ul>
+</div>
